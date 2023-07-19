@@ -1,0 +1,55 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(90deg, #e67e22, #f9b93b);
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+	padding: 20px;
+}
+
+#pregunta {
+	text-shadow: 0 2px 4px rgba(71, 97, 206, .36);
+}
+
+#respuesta {
+	margin-top: 20px;
+	text-shadow: 0 2px 4px rgba(71,97,206,.357272);
+}
+
+button {
+	color: #ecf0f1;
+	font-size: 1.4em;
+	font-weight: bold;
+	background-color: #e67e22;
+	border: 1px solid #f39c12;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0px 6px 0px #d35400;
+	transition: all .1s;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 20px;
+}
+
+button:active {
+	box-shadow: 0px 2px 0px #d35400;
+	position: relative;
+	top: 2px;
+}
