@@ -1,6 +1,7 @@
 // selectores
 const chisteTextoElement = document.getElementById("chiste-texto");
 const btnChiste = document.getElementById("btn-chiste");
+const btnTwitter = document.getElementById("btn-twitter");
 
 // chistes
 const chistes = [
@@ -42,8 +43,15 @@ function obtenerChisteAleatorio() {
     return chistes[indiceAleatorio];
 }
 
-// oyente de evento
+// oyente de evento para el botón de obtener chiste aleatorio
 btnChiste.addEventListener("click", function () {
     const chisteAleatorio = obtenerChisteAleatorio();
-    chisteTextoElement.textContent = chisteAleatorio.chiste;
+    chisteTextoElement.innerHTML = `<i class="fas fa-quote-left"></i> ${chisteAleatorio.chiste} <i class="fas fa-quote-right"></i>`;
+});
+
+// oyente de evento para el botón de Twitter
+btnTwitter.addEventListener("click", function () {
+    const chisteActual = chisteTextoElement.textContent.trim();
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(chisteActual)}`;
+    window.open(tweetUrl, "_blank");
 });
