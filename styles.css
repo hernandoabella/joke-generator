@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
 	margin: 0;
@@ -6,21 +7,28 @@
 }
 
 body {
-	background: linear-gradient(90deg, #e67e22, #f9b93b);
+	background: #e67e22;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+	padding: 20px;
+	background: #f7f7f7;
+	border-radius: 12px;
+}
+
+.chiste-aleatorio {
 	background: rgba(255, 255, 255, 0.25);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 320px;
 	padding: 20px;
 }
 
@@ -35,7 +43,7 @@ body {
 
 button {
 	color: #ecf0f1;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: bold;
 	background-color: #e67e22;
 	border: 1px solid #f39c12;
@@ -46,6 +54,7 @@ button {
 	cursor: pointer;
 	width: 100%;
 	margin-top: 20px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 button:active {
@@ -53,3 +62,19 @@ button:active {
 	position: relative;
 	top: 2px;
 }
+
+@keyframes fadeInOut {
+	0% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+  
+  .fade-in-out {
+	animation: fadeInOut 2s ease;
+  }
