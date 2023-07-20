@@ -6,24 +6,24 @@ const btnChiste = document.getElementById("btn-chiste");
 // chistes
 const chistes = [
     {
-        pregunta: "¿Cómo se llama el campeón de buceo japonés?",
-        respuesta: "Tokofondo."
+        pregunta: "¿Cuál es el animal más elegante de la programación?",
+        respuesta: "El pavo 'real'."
     },
     {
-        pregunta: "¿Por qué estás pensando tanto en matemáticas?",
-        respuesta: "Porque tengo muchos problemas."
+        pregunta: "¿Qué hace un cocodrilo en un programa?",
+        respuesta: "¡Muerde los errores!"
     },
     {
-        pregunta: "¿Cuál es el animal más antiguo?",
-        respuesta: "La cebra, ¡porque está en blanco y negro!"
+        pregunta: "¿Cuál es el colmo de un programador?",
+        respuesta: "Que le dé un ataque de 'cookies'."
     },
     {
-        pregunta: "¿Cómo se llama el campeón de ajedrez más rápido del mundo?",
-        respuesta: "¡Jaquemate!"
+        pregunta: "¿Por qué un programador es siempre el más buscado?",
+        respuesta: "Porque siempre tiene la 'llave'."
     },
     {
-        pregunta: "¿Por qué los pájaros no usan Facebook?",
-        respuesta: "Porque ya tienen Twitter."
+        pregunta: "¿Cómo se ríe un programador?",
+        respuesta: "'JA!va'."
     }
 ];
 
