@@ -1,29 +1,38 @@
 // selectores
-const preguntaElement = document.getElementById("pregunta");
-const respuestaElement = document.getElementById("respuesta");
+const chisteTextoElement = document.getElementById("chiste-texto");
 const btnChiste = document.getElementById("btn-chiste");
 
 // chistes
 const chistes = [
     {
-        pregunta: "¿Cuál es el animal más elegante de la programación?",
-        respuesta: "El pavo 'real'."
+        chiste: "¿Cuál es el animal más elegante de la programación? El pavo 'real'."
     },
     {
-        pregunta: "¿Qué hace un cocodrilo en un programa?",
-        respuesta: "¡Muerde los errores!"
+        chiste: "¿Qué hace un cocodrilo en un programa? ¡Muerde los errores!"
     },
     {
-        pregunta: "¿Cuál es el colmo de un programador?",
-        respuesta: "Que le dé un ataque de 'cookies'."
+        chiste: "¿Cuál es el colmo de un programador? Que le dé un ataque de 'cookies'."
     },
     {
-        pregunta: "¿Por qué un programador es siempre el más buscado?",
-        respuesta: "Porque siempre tiene la 'llave'."
+        chiste: "¿Por qué un programador es siempre el más buscado? Porque siempre tiene la 'llave'."
     },
     {
-        pregunta: "¿Cómo se ríe un programador?",
-        respuesta: "'JA!va'."
+        chiste: "¿Cómo se ríe un programador? 'JA!va'."
+    },
+	{
+        chiste: "¿Por qué los programadores siempre confunden Halloween con Navidad? Porque Oct 31 == Dec 25."
+    },
+    {
+        chiste: "¿Qué le dijo un bit al otro? Nos vemos en el bus."
+    },
+    {
+        chiste: "¿Por qué los programadores siempre tienen frío? Porque si no, serían programadores 'calientes'."
+    },
+    {
+        chiste: "¿Cómo se llama un programador en la playa? Un 'scriptorium'."
+    },
+    {
+        chiste: "¿Cuántos programadores se necesitan para cambiar una bombilla? Ninguno, es un problema de hardware."
     }
 ];
 
@@ -36,6 +45,5 @@ function obtenerChisteAleatorio() {
 // oyente de evento
 btnChiste.addEventListener("click", function () {
     const chisteAleatorio = obtenerChisteAleatorio();
-    preguntaElement.textContent = chisteAleatorio.pregunta;
-    respuestaElement.textContent = chisteAleatorio.respuesta;
+    chisteTextoElement.textContent = chisteAleatorio.chiste;
 });
