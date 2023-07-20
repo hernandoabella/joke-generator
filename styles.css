@@ -26,13 +26,7 @@ body {
 	padding: 20px;
 }
 
-.chiste-aleatorio {
-	border-radius: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	padding: 20px;
-	background: #f7f7f7;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.115);
-}
+
 
 #chiste-texto {
 	text-shadow: 0 2px 4px rgba(71, 97, 206, .36);
