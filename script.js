@@ -36,19 +36,6 @@ function obtenerChisteAleatorio() {
 // oyente de evento
 btnChiste.addEventListener("click", function () {
     const chisteAleatorio = obtenerChisteAleatorio();
-
-    // Agregamos la clase "fade-in-out" a los elementos de pregunta y respuesta
-    preguntaElement.classList.add("fade-in-out");
-    respuestaElement.classList.add("fade-in-out");
-
-    // Esperamos un breve momento para que se aplique la animación
-    setTimeout(function () {
-        // Cambiamos el contenido de pregunta y respuesta
-        preguntaElement.textContent = chisteAleatorio.pregunta;
-        respuestaElement.textContent = chisteAleatorio.respuesta;
-
-        // Removemos la clase "fade-in-out" para poder volver a aplicar la animación
-        preguntaElement.classList.remove("fade-in-out");
-        respuestaElement.classList.remove("fade-in-out");
-    }, 2000); // El tiempo debe coincidir con la duración de la animación CSS (2 segundos en este caso)
+    preguntaElement.textContent = chisteAleatorio.pregunta;
+    respuestaElement.textContent = chisteAleatorio.respuesta;
 });
