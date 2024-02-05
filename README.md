@@ -1,1 +1,1 @@
-# generador-de-bromas
+# joke-generator
